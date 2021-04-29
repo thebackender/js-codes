@@ -1,0 +1,27 @@
+<!-- 
+	https://learn.javascript.ru/css-animations
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<script type="text/javascript" src="test.js"></script>
+</head>
+<body>
+	<!-- Change Color animation -->
+	<button onclick="changeBG('box1', '#9dceff');">Original</button>
+	<button onclick="changeBG('box1', '#f0f');">Magenta</button>
+	<button onclick="changeBG('box1', '#0c0');">Green</button><br><BR>
+
+	<!-- Fade Out-In -->
+	<button onclick="fadeOut('box1');">Fade Out</button>
+	<button onclick="fadeIn('box1');">Fade In</button><br><BR>
+
+	<!-- Slide open-close -->
+	<button onclick="slideOpen('box1');">Slide Open</button>
+	<button onclick="slideClose('box1');">Slide Close</button>
+
+	<div id="box1">Content in box1</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.PrimaryNav {
+  list-style: none;
+  max-width: 720px;
+  padding: 0;
+  width: 100%;
+}
+
+.Nav-item {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.Nav-item.is-active a {
+  color: rgba(0, 0, 0, 1);
+}
+.Nav-item a {
+  color: #333;
+  text-decoration: none;
+}
+.Nav-item a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.with-indicator {
+  position: relative;
+  z-index: 0;
+}
+.with-indicator .Nav-item:last-child:before, .with-indicator .Nav-item:last-child:after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: left .75s ease;
+  transition: left .75s cubic-bezier(1, 0.67, -0.34, 1);
+} 
+.with-indicator .Nav-item:last-child:after {
+  background: rgba(120, 120, 120, .5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  z-index: 1;
+}
+
+/*Indicator location nt .is-active*/
+.with-indicator .Nav-item:nth-child(1).is-active ~ .Nav-item:last-child:after {
+  left: 0%;
+}
+.with-indicator .Nav-item:nth-child(1).is-active ~ .Nav-item:last-child:before {
+  left: 10%;
+}
+.with-indicator .Nav-item:nth-child(2).is-active ~ .Nav-item:last-child:after {
+  left: 20%;
+}
+.with-indicator .Nav-item:nth-child(2).is-active ~ .Nav-item:last-child:before {
+  left: 30%;
+}
+.with-indicator .Nav-item:nth-child(3).is-active ~ .Nav-item:last-child:after {
+  left: 40%;
+}
+.with-indicator .Nav-item:nth-child(3).is-active ~ .Nav-item:last-child:before {
+  left: 50%;
+}
+.with-indicator .Nav-item:nth-child(4).is-active ~ .Nav-item:last-child:after {
+  left: 60%;
+}
+.with-indicator .Nav-item:nth-child(4).is-active ~ .Nav-item:last-child:before {
+  left: 70%;
+}
+
+/*Indicator Scroll*/
+.with-indicator .Nav-item:nth-child(1):hover ~ .Nav-item:last-child:after {
+  left: 0% !important;/*For outline Write -10%*/
+}
+.with-indicator .Nav-item:nth-child(1):hover ~ .Nav-item:last-child:before {
+  left: 10% !important;
+}
+.with-indicator .Nav-item:nth-child(2):hover ~ .Nav-item:last-child:after {
+  left: 20% !important;
+}
+.with-indicator .Nav-item:nth-child(2):hover ~ .Nav-item:last-child:before {
+  left: 30% !important;
+}
+.with-indicator .Nav-item:nth-child(3):hover ~ .Nav-item:last-child:after {
+  left: 40% !important;
+}
+.with-indicator .Nav-item:nth-child(3):hover ~ .Nav-item:last-child:before {
+  left: 50% !important;
+}
+.with-indicator .Nav-item:nth-child(4):hover ~ .Nav-item:last-child:after {
+  left: 60% !important;
+}
+.with-indicator .Nav-item:nth-child(4):hover ~ .Nav-item:last-child:before {
+  left: 70% !important;
+}
+.with-indicator .Nav-item:last-child:hover:before, .with-indicator .Nav-item:last-child.is-active:before {
+  left: 90% !important;
+}
+.with-indicator .Nav-item:last-child:hover:after, .with-indicator .Nav-item:last-child.is-active:after {
+  left: 80% !important;
+}
+
+
+.PrimaryNav:before,
+.PrimaryNav:after {
+  content: " ";
+  display: table;
+}
+
+.PrimaryNav:after {
+  clear: both;
+}
+
+
+/* BIN:
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.toggle {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html {
+  background-color: #121212;
+  font-family: sans-serif;
+  font-weight: 800;
+}
