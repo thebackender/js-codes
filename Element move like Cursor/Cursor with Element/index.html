@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="element"></div>
+	<script type="text/javascript">
+		var elem = document.getElementById('element');
+		document.onmousemove = function(){
+			var x = event.clientX;
+    		var y = event.clientY;
+    		elem.style.left = x + "px";
+    		elem.style.top = (y - 50) + "px";
+		}
+	</script>
+</body>
+</html>

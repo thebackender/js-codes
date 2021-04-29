@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>akj</title>
+	<style type="text/css">
+		body{
+			width: 100%;
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+		}
+		.module {
+			width: 100%;
+			height: 100vh;
+		  --x: 0px;
+		  --y: 0px;
+		  background-image: url(large-image.jpg);
+		  background-position: var(--x) var(--y);
+		}
+	</style>
+</head>
+<body>
+	<div class="module" id="module"></div>
+	<script type="text/javascript">
+		const el = document.querySelector("#module");
+
+		el.addEventListener("mousemove", (e) => {
+		  el.style.setProperty('--x', -e.offsetX + "px");
+		  el.style.setProperty('--y', -e.offsetY + "px");
+		});
+	</script>
+</body>
+</html>
