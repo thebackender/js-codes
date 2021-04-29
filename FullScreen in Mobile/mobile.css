@@ -1,0 +1,6 @@
+@import "compass/css3";
+
+/* DEMO ONLY for this short page - remove in live code */
+body { 
+  min-height: 1600px;
+}
