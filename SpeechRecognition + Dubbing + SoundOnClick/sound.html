@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<audio src="sound.mp3" id="sound"></audio>
+	<audio src="sound2.mp3" id="sound2"></audio>
+	<button onmouseover="sound()">MouseOver here</button><br>
+	<button onclick="sound2()">Sound 2 Click</button>
+	<script type="text/javascript">
+		function sound(){
+			var a = document.getElementById('sound');
+    		a.play();
+		}
+		function sound2(){
+			var b = document.getElementById('sound2');
+			b.pause();
+    		b.play();
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+(#) Open any Image and then Go to File->Export->Quick Export as SVG

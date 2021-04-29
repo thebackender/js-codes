@@ -1,0 +1,23 @@
+.parent{
+	overflow: hidden;
+	margin-top:50px;
+}
+            
+.child{
+	width:200px;
+	height: 150px;
+	float: left;
+	margin-left:20px;
+	border:1px solid #000;
+	text-align:center;
+	line-height:150px;
+	cursor: pointer;
+	background-color:#ddd;
+	font-family: sans-serif;
+}
+
+.bak{ 
+	background-color: red; 
+	color: #fff; 
+	font-weight:bold; 
+}
