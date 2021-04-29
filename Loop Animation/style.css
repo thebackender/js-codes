@@ -1,0 +1,29 @@
+.rect {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+}
+
+.timeout {
+  background: orange;
+}
+
+.anim-frame {
+  top: 110px;
+  background: green;
+}
+
+#rect2{
+	background: magenta;
+	top: 210px;
+}
+@keyframes rect2{
+	0%{
+		margin-left: 0px;
+		background: magenta;
+	}
+	100%{
+		margin-left: 600px;
+		background: skyblue;
+	}
+}

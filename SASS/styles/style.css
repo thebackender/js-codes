@@ -1,0 +1,28 @@
+/* Define standard variables and values for website */
+/*Variables*/
+/* Use the variables */
+body {
+  background-color: lightblue;
+  color: darkblue;
+  font-size: 18px;
+}
+
+/*Nested Rules*/
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/*Nested Properties*/
+/*# sourceMappingURL=style.css.map */
