@@ -1,0 +1,16 @@
+body{
+	background: deepskyblue;
+}
+.mapdiv{
+	width: 28%;
+	margin: auto;
+}
+.mapdiv path{
+	fill: #cc1100;
+	stroke: #dece0c;
+	stroke-width: 4px;
+	transition: fill .3s;
+}
+.mapdiv :hover{
+	fill: #000;
+}

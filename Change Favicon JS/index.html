@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Favicon</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Et labore, incidunt nesciunt? Repellat, explicabo. Iste itaque vitae fugiat sint quasi tenetur nihil ipsum aliquid fuga, accusantium impedit repellat id veritatis molestias perferendis libero alias cum, accusamus pariatur, aperiam unde quod iure velit distinctio dignissimos! Aperiam ut, facere facilis harum excepturi. Unde dolore, explicabo optio eius dignissimos corrupti eaque error fugit, ipsam earum quasi rerum doloremque nobis sed cum, tempore vel provident! Fugiat ipsa molestiae cupiditate perspiciatis laborum nemo sit eum blanditiis voluptatem suscipit ipsum ducimus delectus tenetur, odio nisi animi accusamus perferendis laboriosam, voluptas fugit cumque quasi, consequatur eius exercitationem!<br>
+	<button onclick="changeFavicon()">Change</button>
+	<script type="text/javascript">
+		document.head || (document.head = document.getElementsByTagName('head')[0]);
+		var src = 'icon.jpg';
+		function changeFavicon() {
+			var link = document.createElement('link'),
+			    oldLink = document.getElementById('dynamic-favicon');
+			link.id = 'dynamic-favicon';
+			link.rel = 'shortcut icon';
+			link.href = src;
+			if (src == 'icon.jpg') {
+				src = 'icon2.jpg';
+			}else{
+				src = 'icon.jpg';
+			}
+			if (oldLink) {
+				document.head.removeChild(oldLink);
+			}
+				document.head.appendChild(link);
+		}
+	</script>
+</body>
+</html>
